@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hood height</title>
+    <style>
+      @font-face {
+        font-family: "Thmanyah Sans";
+        src: url(fonts/thmanyah-sans-regular.otf);
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Thmanyah Sans";
+        src: url(fonts/thmanyah-sans-medium.otf);
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Thmanyah Sans";
+        src: url(fonts/thmanyah-sans-bold.otf);
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Thmanyah Sans";
+        src: url(fonts/thmanyah-sans-black.otf);
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "Thmanyah Serif Display";
+        src: url(fonts/thmanyah-serif-display-black.otf);
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "Thmanyah Serif Text";
+        src: url(fonts/thmanyah-serif-text-regular.otf);
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Thmanyah Serif Text";
+        src: url(fonts/thmanyah-serif-text-medium.otf);
+        font-weight: 500;
+      }
+
+      :root {
+        --charbon: #0d0d0b;
+        --semoule: #efd8ae;
+        --olive: #a3be56;
+        --raised: #1a1916;
+        --tint: #24221d;
+        --line: #3a372f;
+        --line-strong: #6e6858;
+        --muted: #a79e8b;
+        --bar-muted: #76705f;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1350px;
+        background: var(--charbon);
+      }
+      body {
+        font-family: "Thmanyah Sans";
+        color: var(--semoule);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .page {
+        position: absolute;
+        inset: 0;
+        padding: 64px 86px 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+      }
+      .label {
+        background: var(--olive);
+        color: var(--charbon);
+        font-weight: 700;
+        font-size: 28px;
+        padding: 10px 26px 12px;
+        border-radius: 4px;
+        border-top-left-radius: 24px;
+      }
+      .logo {
+        height: 110px;
+      }
+
+      h1 {
+        margin-top: 20px;
+        font-family: "Thmanyah Serif Display";
+        font-weight: 900;
+        font-size: 94px;
+        line-height: 1.22;
+      }
+      h1 .strong {
+        color: var(--olive);
+      }
+      h1 .latin {
+        font-size: 86px;
+      }
+      .sub {
+        margin-top: 10px;
+        font-family: "Thmanyah Serif Text";
+        font-size: 34px;
+        color: var(--muted);
+      }
+
+      .card {
+        position: absolute;
+        top: 494px;
+        left: 86px;
+        right: 86px;
+        height: 640px;
+        background: var(--raised);
+        border-radius: 4px;
+        border-top-left-radius: 24px;
+        overflow: hidden;
+      }
+      .card svg {
+        display: block;
+      }
+
+      .notes {
+        position: absolute;
+        top: 1150px;
+        left: 86px;
+        right: 86px;
+      }
+      .notes p:first-child {
+        font-weight: 700;
+        font-size: 28px;
+      }
+      .notes p:last-child {
+        margin-top: 6px;
+        font-size: 25px;
+        color: var(--muted);
+      }
+
+      footer {
+        position: absolute;
+        left: 86px;
+        right: 86px;
+        bottom: 40px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .signature {
+        font-family: "Thmanyah Serif Text";
+        font-weight: 500;
+        font-size: 28px;
+      }
+      .handle {
+        direction: ltr;
+        font-weight: 500;
+        font-size: 26px;
+        color: var(--olive);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <span class="label">التجهيز ديال الكوزينة</span>
+        <img class="logo" src="mon3ich-logo-principal.svg" alt="Mon3ich Food" />
+      </header>
+
+      <h1>
+        العلـــو ديال <span class="latin">la hotte</span><br />كيفرّق
+        <span class="strong">فالشفـــط</span>
+      </h1>
+      <p class="sub">جوج قياسات خاصك تحترمهم قبل ما تركّب.</p>
+    </div>
+
+    <div class="card">
+      <!-- Scale: 1.9 px per cm. Floor y=560, hood bottom 185 cm (y=208.5), cooking surface 95 cm (y=379.5). -->
+      <svg
+        width="908"
+        height="640"
+        viewBox="0 0 908 640"
+        font-family="Thmanyah Sans"
+      >
+        <defs>
+          <marker
+            id="tip"
+            viewBox="0 0 12 12"
+            refX="11"
+            refY="6"
+            markerWidth="12"
+            markerHeight="12"
+            orient="auto-start-reverse"
+          >
+            <path d="M0 1 L12 6 L0 11 Z" fill="#a3be56" />
+          </marker>
+          <marker
+            id="flow"
+            viewBox="0 0 10 10"
+            refX="9"
+            refY="5"
+            markerWidth="9"
+            markerHeight="9"
+            orient="auto"
+          >
+            <path d="M0 0 L10 5 L0 10 Z" fill="#a3be56" />
+          </marker>
+        </defs>
+
+        <!-- Ceiling: we don't measure to it -->
+        <line
+          x1="0"
+          y1="34"
+          x2="908"
+          y2="34"
+          stroke="#6e6858"
+          stroke-width="2"
+          stroke-dasharray="10 8"
+        />
+        <text
+          x="884"
+          y="24"
+          text-anchor="start"
+          direction="rtl"
+          font-size="20"
+          fill="#a79e8b"
+        >
+          السقف
+        </text>
+
+        <!-- Duct -->
+        <rect
+          x="490"
+          y="34"
+          width="110"
+          height="70"
+          fill="#24221d"
+          stroke="#efd8ae"
+          stroke-width="2"
+        />
+
+        <!-- Hood: top 55 cm above its bottom edge -->
+        <path
+          d="M300 104 H790 L840 168 V208.5 H250 V168 Z"
+          fill="#24221d"
+          stroke="#efd8ae"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+        <line
+          x1="250"
+          y1="168"
+          x2="840"
+          y2="168"
+          stroke="#efd8ae"
+          stroke-width="2"
+        />
+        <!-- Filters, slats at the brand's 30° -->
+        <g stroke="#6e6858" stroke-width="3">
+          <line x1="300" y1="160" x2="318.5" y2="112" />
+          <line x1="326" y1="160" x2="344.5" y2="112" />
+          <line x1="352" y1="160" x2="370.5" y2="112" />
+          <line x1="378" y1="160" x2="396.5" y2="112" />
+          <line x1="404" y1="160" x2="422.5" y2="112" />
+          <line x1="430" y1="160" x2="448.5" y2="112" />
+          <line x1="456" y1="160" x2="474.5" y2="112" />
+          <line x1="482" y1="160" x2="500.5" y2="112" />
+          <line x1="508" y1="160" x2="526.5" y2="112" />
+          <line x1="534" y1="160" x2="552.5" y2="112" />
+          <line x1="560" y1="160" x2="578.5" y2="112" />
+          <line x1="586" y1="160" x2="604.5" y2="112" />
+          <line x1="612" y1="160" x2="630.5" y2="112" />
+          <line x1="638" y1="160" x2="656.5" y2="112" />
+          <line x1="664" y1="160" x2="682.5" y2="112" />
+          <line x1="690" y1="160" x2="708.5" y2="112" />
+          <line x1="716" y1="160" x2="734.5" y2="112" />
+          <line x1="742" y1="160" x2="760.5" y2="112" />
+          <line x1="768" y1="160" x2="786.5" y2="112" />
+        </g>
+        <!-- Bottom edge of the hood: the reference line, in olive -->
+        <line
+          x1="250"
+          y1="208.5"
+          x2="840"
+          y2="208.5"
+          stroke="#a3be56"
+          stroke-width="4"
+        />
+
+        <!-- Cooking line -->
+        <g stroke="#efd8ae" stroke-width="2" fill="#24221d">
+          <!-- pot -->
+          <rect x="360" y="318" width="96" height="54" rx="4" />
+          <rect x="350" y="310" width="116" height="10" rx="3" />
+          <rect x="396" y="300" width="24" height="10" rx="3" />
+          <!-- grates -->
+          <path
+            d="M340 379.5 V372 H476 V379.5 M500 379.5 V372 H620 V379.5 M644 379.5 V372 H756 V379.5"
+            fill="none"
+          />
+          <!-- cooktop slab, top = cooking surface -->
+          <rect x="320" y="379.5" width="450" height="20" />
+          <!-- body -->
+          <rect x="326" y="399.5" width="438" height="138" />
+          <line x1="326" y1="436" x2="764" y2="436" />
+          <rect x="344" y="452" width="196" height="72" rx="4" />
+          <rect x="550" y="452" width="196" height="72" rx="4" />
+          <!-- legs -->
+          <rect x="338" y="537.5" width="12" height="22.5" />
+          <rect x="740" y="537.5" width="12" height="22.5" />
+        </g>
+        <g fill="none" stroke="#efd8ae" stroke-width="3" stroke-linecap="round">
+          <line x1="380" y1="466" x2="504" y2="466" />
+          <line x1="586" y1="466" x2="710" y2="466" />
+        </g>
+        <g fill="#a79e8b">
+          <circle cx="372" cy="418" r="7" />
+          <circle cx="404" cy="418" r="7" />
+          <circle cx="436" cy="418" r="7" />
+          <circle cx="468" cy="418" r="7" />
+          <circle cx="622" cy="418" r="7" />
+          <circle cx="654" cy="418" r="7" />
+          <circle cx="686" cy="418" r="7" />
+          <circle cx="718" cy="418" r="7" />
+        </g>
+
+        <!-- Floor: slopes slightly down to the drain -->
+        <path d="M0 556 L150 562 H246 L908 552 V640 H0 Z" fill="#24221d" />
+        <path
+          d="M0 556 L150 562 M246 562 L908 552"
+          stroke="#6e6858"
+          stroke-width="2"
+          fill="none"
+        />
+        <!-- Drain channel + grate -->
+        <rect
+          x="150"
+          y="562"
+          width="96"
+          height="30"
+          fill="#0d0d0b"
+          stroke="#efd8ae"
+          stroke-width="2"
+        />
+        <g stroke="#efd8ae" stroke-width="3">
+          <line x1="162" y1="562" x2="162" y2="572" />
+          <line x1="176" y1="562" x2="176" y2="572" />
+          <line x1="190" y1="562" x2="190" y2="572" />
+          <line x1="204" y1="562" x2="204" y2="572" />
+          <line x1="218" y1="562" x2="218" y2="572" />
+          <line x1="232" y1="562" x2="232" y2="572" />
+        </g>
+        <!-- Water flow toward the drain -->
+        <g stroke="#a3be56" stroke-width="3" fill="none" stroke-linecap="round">
+          <line x1="330" y1="549" x2="268" y2="551" marker-end="url(#flow)" />
+        </g>
+
+        <!-- 185 cm: floor to hood bottom -->
+        <line
+          x1="70"
+          y1="208.5"
+          x2="250"
+          y2="208.5"
+          stroke="#a3be56"
+          stroke-width="2"
+          stroke-dasharray="6 6"
+        />
+        <line
+          x1="100"
+          y1="212"
+          x2="100"
+          y2="553"
+          stroke="#a3be56"
+          stroke-width="3"
+          marker-start="url(#tip)"
+          marker-end="url(#tip)"
+        />
+        <g>
+          <path d="M34 296 H274 A4 4 0 0 1 278 300 V410 A4 4 0 0 1 274 414 H14 A4 4 0 0 1 10 410 V320 A24 24 0 0 1 34 296 Z" fill="#0d0d0b" stroke="#a3be56" stroke-width="2" />
+          <text
+            x="144"
+            y="356"
+            text-anchor="middle"
+            direction="ltr"
+            font-size="52"
+            font-weight="900"
+            fill="#efd8ae"
+          >
+            185 cm
+          </text>
+          <text
+            x="144"
+            y="394"
+            text-anchor="middle"
+            direction="rtl"
+            font-size="19"
+            font-weight="500"
+            fill="#a79e8b"
+          >
+            من الأرض حتى لتحت la hotte
+          </text>
+        </g>
+
+        <!-- 90 cm: cooking surface to hood bottom -->
+        <line
+          x1="560"
+          y1="212"
+          x2="560"
+          y2="376"
+          stroke="#a3be56"
+          stroke-width="3"
+          marker-start="url(#tip)"
+          marker-end="url(#tip)"
+        />
+        <g>
+          <path d="M604 234 H888 A4 4 0 0 1 892 238 V348 A4 4 0 0 1 888 352 H584 A4 4 0 0 1 580 348 V258 A24 24 0 0 1 604 234 Z" fill="#0d0d0b" stroke="#a3be56" stroke-width="2" />
+          <text
+            x="736"
+            y="294"
+            text-anchor="middle"
+            direction="ltr"
+            font-size="52"
+            font-weight="900"
+            fill="#efd8ae"
+          >
+            90 cm
+          </text>
+          <text
+            x="736"
+            y="332"
+            text-anchor="middle"
+            direction="rtl"
+            font-size="19"
+            font-weight="500"
+            fill="#a79e8b"
+          >
+            من سطح الطياب حتى لتحت la hotte
+          </text>
+        </g>
+
+        <!-- Drain callout -->
+        <path d="M246 586 H420" stroke="#a3be56" stroke-width="2" fill="none" />
+        <text
+          x="886"
+          y="596"
+          text-anchor="start"
+          direction="rtl"
+          font-size="26"
+          font-weight="700"
+          fill="#efd8ae"
+        >
+          caniveau بالشبكة فالأرض
+        </text>
+        <text
+          x="886"
+          y="624"
+          text-anchor="start"
+          direction="rtl"
+          font-size="20"
+          font-weight="400"
+          fill="#a79e8b"
+        >
+          الأرض مايلة شوية للقادوس باش ما يبقاش الما واقف
+        </text>
+      </svg>
+    </div>
+
+    <div class="notes">
+      <p>أبعاد توضيحية: راجعها مع la fiche technique ديال المصنع.</p>
+      <p>كنقيسو حتى للحاشية اللتحتانية ديال la hotte، ماشي حتى للسقف.</p>
+    </div>
+
+    <footer>
+      <span class="signature">المطعم بالسيستيم، ماشي بالزهر</span>
+      <span class="handle">@mon3ich_food</span>
+    </footer>
+  </body>
+</html>
